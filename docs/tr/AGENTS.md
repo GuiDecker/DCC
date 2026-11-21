@@ -47,14 +47,14 @@ Bu, yazılım geliştirme için 72 özel agent, 328 skill, 99 command ve otomati
 ## Agent Orkestrasyonu
 
 Agentları kullanıcı istemi olmadan proaktif olarak kullanın:
-- Karmaşık özellik istekleri → **dcc:planner**
-- Yeni yazılan/değiştirilen kod → **dcc:code-reviewer**
-- Hata düzeltme veya yeni özellik → **dcc:tdd-guide**
-- Mimari karar → **dcc:architect**
-- Güvenlik açısından hassas kod → **dcc:security-reviewer**
-- Çok kanallı iletişim önceliklendirme → **dcc:chief-of-staff**
-- Otonom döngüler / döngü izleme → **dcc:loop-operator**
-- Harness yapılandırma güvenilirliği ve maliyeti → **dcc:harness-optimizer**
+- Karmaşık özellik istekleri → **ecc:planner**
+- Yeni yazılan/değiştirilen kod → **ecc:code-reviewer**
+- Hata düzeltme veya yeni özellik → **ecc:tdd-guide**
+- Mimari karar → **ecc:architect**
+- Güvenlik açısından hassas kod → **ecc:security-reviewer**
+- Çok kanallı iletişim önceliklendirme → **ecc:chief-of-staff**
+- Otonom döngüler / döngü izleme → **ecc:loop-operator**
+- Harness yapılandırma güvenilirliği ve maliyeti → **ecc:harness-optimizer**
 
 Bağımsız işlemler için paralel yürütme kullanın — birden fazla agenti aynı anda başlatın.
 

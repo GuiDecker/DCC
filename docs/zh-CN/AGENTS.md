@@ -48,14 +48,14 @@
 
 主动使用智能体，无需用户提示：
 
-* 复杂功能请求 → **dcc:planner**
-* 刚编写/修改的代码 → **dcc:code-reviewer**
-* 错误修复或新功能 → **dcc:tdd-guide**
-* 架构决策 → **dcc:architect**
-* 安全敏感代码 → **dcc:security-reviewer**
-* 多渠道沟通分流 → **dcc:chief-of-staff**
-* 自主循环 / 循环监控 → **dcc:loop-operator**
-* 线束配置可靠性及成本 → **dcc:harness-optimizer**
+* 复杂功能请求 → **ecc:planner**
+* 刚编写/修改的代码 → **ecc:code-reviewer**
+* 错误修复或新功能 → **ecc:tdd-guide**
+* 架构决策 → **ecc:architect**
+* 安全敏感代码 → **ecc:security-reviewer**
+* 多渠道沟通分流 → **ecc:chief-of-staff**
+* 自主循环 / 循环监控 → **ecc:loop-operator**
+* 线束配置可靠性及成本 → **ecc:harness-optimizer**
 
 对于独立操作使用并行执行 — 同时启动多个智能体。
 

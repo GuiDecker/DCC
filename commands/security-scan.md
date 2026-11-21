@@ -1,6 +1,6 @@
 ---
 description: Run AgentShield against agent, hook, MCP, permission, and secret surfaces. This is the slash-command entrypoint for that audit; prefer the security-scan skill for the same AgentShield audit in conversation.
-agent: dcc:security-reviewer
+agent: ecc:security-reviewer
 subtask: true
 ---
 

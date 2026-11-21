@@ -50,13 +50,13 @@ Este es un **plugin de IA para codificación listo para producción** que propor
 ## Orquestación de Agentes
 
 Usa agentes proactivamente sin prompt del usuario:
-- Solicitudes de features complejas → **dcc:planner**
-- Código recién escrito/modificado → **dcc:code-reviewer**
-- Corrección de bug o nueva feature → **dcc:tdd-guide**
-- Decisión arquitectónica → **dcc:architect**
-- Código sensible a la seguridad → **dcc:security-reviewer**
-- Bucles autónomos / monitoreo de bucles → **dcc:loop-operator**
-- Confiabilidad y costo de la configuración del harness → **dcc:harness-optimizer**
+- Solicitudes de features complejas → **ecc:planner**
+- Código recién escrito/modificado → **ecc:code-reviewer**
+- Corrección de bug o nueva feature → **ecc:tdd-guide**
+- Decisión arquitectónica → **ecc:architect**
+- Código sensible a la seguridad → **ecc:security-reviewer**
+- Bucles autónomos / monitoreo de bucles → **ecc:loop-operator**
+- Confiabilidad y costo de la configuración del harness → **ecc:harness-optimizer**
 
 Usa ejecución paralela para operaciones independientes — lanza múltiples agentes simultáneamente.
 
