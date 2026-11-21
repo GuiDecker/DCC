@@ -6,32 +6,32 @@ ECC agents come either from the `ecc@ecc` plugin (plugin-scoped names, `ecc:<nam
 They are invoked through the Agent tool with that `subagent_type`:
 
 ```text
-Agent(subagent_type: "ecc:planner", prompt: "...")
+Agent(subagent_type: "dcc:planner", prompt: "...")
 ```
 
 | Agent | Purpose | When to Use |
 |-------|---------|-------------|
-| ecc:planner | Implementation planning | Complex features, refactoring |
-| ecc:architect | System design | Architectural decisions |
-| ecc:tdd-guide | Test-driven development | New features, bug fixes |
-| ecc:code-reviewer | Code review | After writing code |
-| ecc:security-reviewer | Security analysis | Before commits |
-| ecc:build-error-resolver | Fix build errors | When build fails |
-| ecc:e2e-runner | E2E testing | Critical user flows |
-| ecc:refactor-cleaner | Dead code cleanup | Code maintenance |
-| ecc:doc-updater | Documentation | Updating docs |
-| ecc:rust-reviewer | Rust code review | Rust projects |
-| ecc:harmonyos-app-resolver | HarmonyOS app development | HarmonyOS/ArkTS projects |
+| dcc:planner | Implementation planning | Complex features, refactoring |
+| dcc:architect | System design | Architectural decisions |
+| dcc:tdd-guide | Test-driven development | New features, bug fixes |
+| dcc:code-reviewer | Code review | After writing code |
+| dcc:security-reviewer | Security analysis | Before commits |
+| dcc:build-error-resolver | Fix build errors | When build fails |
+| dcc:e2e-runner | E2E testing | Critical user flows |
+| dcc:refactor-cleaner | Dead code cleanup | Code maintenance |
+| dcc:doc-updater | Documentation | Updating docs |
+| dcc:rust-reviewer | Rust code review | Rust projects |
+| dcc:harmonyos-app-resolver | HarmonyOS app development | HarmonyOS/ArkTS projects |
 
 For the full roster of 69 agents, see `/ecc:ecc-guide`.
 
 ## Immediate Agent Usage
 
 No user prompt needed:
-1. Complex feature requests - Use **ecc:planner** agent
-2. Code just written/modified - Use **ecc:code-reviewer** agent
-3. Bug fix or new feature - Use **ecc:tdd-guide** agent
-4. Architectural decision - Use **ecc:architect** agent
+1. Complex feature requests - Use **dcc:planner** agent
+2. Code just written/modified - Use **dcc:code-reviewer** agent
+3. Bug fix or new feature - Use **dcc:tdd-guide** agent
+4. Architectural decision - Use **dcc:architect** agent
 
 ## Parallel Task Execution
 

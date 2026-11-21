@@ -6,21 +6,21 @@ ECC 智能体随 `ecc@ecc` 插件一起分发，不在 `~/.claude/agents/` 目�
 它们通过 Agent 工具以插件作用域的 `subagent_type` 调用：
 
 ```text
-Agent(subagent_type: "ecc:planner", prompt: "...")
+Agent(subagent_type: "dcc:planner", prompt: "...")
 ```
 
 | 代理 | 用途 | 使用时机 |
 |-------|---------|-------------|
-| ecc:planner | 实现规划 | 复杂功能、重构 |
-| ecc:architect | 系统设计 | 架构决策 |
-| ecc:tdd-guide | 测试驱动开发 | 新功能、错误修复 |
-| ecc:code-reviewer | 代码审查 | 编写代码后 |
-| ecc:security-reviewer | 安全分析 | 提交前 |
-| ecc:build-error-resolver | 修复构建错误 | 构建失败时 |
-| ecc:e2e-runner | 端到端测试 | 关键用户流程 |
-| ecc:refactor-cleaner | 清理死代码 | 代码维护 |
-| ecc:doc-updater | 文档 | 更新文档 |
-| ecc:rust-reviewer | Rust 代码审查 | Rust 项目 |
+| dcc:planner | 实现规划 | 复杂功能、重构 |
+| dcc:architect | 系统设计 | 架构决策 |
+| dcc:tdd-guide | 测试驱动开发 | 新功能、错误修复 |
+| dcc:code-reviewer | 代码审查 | 编写代码后 |
+| dcc:security-reviewer | 安全分析 | 提交前 |
+| dcc:build-error-resolver | 修复构建错误 | 构建失败时 |
+| dcc:e2e-runner | 端到端测试 | 关键用户流程 |
+| dcc:refactor-cleaner | 清理死代码 | 代码维护 |
+| dcc:doc-updater | 文档 | 更新文档 |
+| dcc:rust-reviewer | Rust 代码审查 | Rust 项目 |
 
 完整 68 个智能体的清单参见 `/ecc:ecc-guide`。
 
@@ -28,10 +28,10 @@ Agent(subagent_type: "ecc:planner", prompt: "...")
 
 无需用户提示：
 
-1. 复杂的功能请求 - 使用 **ecc:planner** 智能体
-2. 刚编写/修改的代码 - 使用 **ecc:code-reviewer** 智能体
-3. 错误修复或新功能 - 使用 **ecc:tdd-guide** 智能体
-4. 架构决策 - 使用 **ecc:architect** 智能体
+1. 复杂的功能请求 - 使用 **dcc:planner** 智能体
+2. 刚编写/修改的代码 - 使用 **dcc:code-reviewer** 智能体
+3. 错误修复或新功能 - 使用 **dcc:tdd-guide** 智能体
+4. 架构决策 - 使用 **dcc:architect** 智能体
 
 ## 并行任务执行
 

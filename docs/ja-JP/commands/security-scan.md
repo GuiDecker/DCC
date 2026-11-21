@@ -1,6 +1,6 @@
 ---
 description: エージェント、フック、MCP、パーミッション、シークレットのサーフェスに対してAgentShieldを実行します。
-agent: ecc:security-reviewer
+agent: dcc:security-reviewer
 subtask: true
 ---
 

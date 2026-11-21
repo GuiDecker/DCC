@@ -83,7 +83,7 @@ exit 2
 
 ## Anthropic Cyber Safeguards Block Security Audits Of Your Own Code
 
-**Symptoms:** Running security reviews/audits (e.g. `ecc:security-reviewer`) fails with an API error citing the Usage Policy and "cyber-related safeguards", even though you are auditing your own codebase.
+**Symptoms:** Running security reviews/audits (e.g. `dcc:security-reviewer`) fails with an API error citing the Usage Policy and "cyber-related safeguards", even though you are auditing your own codebase.
 
 **What helps:**
 

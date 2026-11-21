@@ -1,3 +1,39 @@
+# DCC: ECC for Devin
+
+DCC is a Devin-ready adaptation of [ECC (Everything Claude Code)](https://github.com/affaan-m/ECC) by Affaan Mustafa, distributed under the MIT license (see `LICENSE`). It packages ECC's engineering skills and specialist subagents as a Devin plugin, with a focus on multi-agent work.
+
+Based on ECC v2.2.3 (upstream commit `4adeee6`).
+
+## Install in Devin
+
+- Web app: **Customize > Plugins > Add plugin > From repository**, then enter `GuiDecker/DCC`.
+- CLI: `devin plugins install GuiDecker/DCC` (personal scope; add `--local` for this machine only).
+
+DCC is a public fork of ECC. To pull upstream updates, use **Sync fork** on GitHub (or `git fetch upstream && git merge upstream/main`) and keep the changes listed below.
+
+## What Devin loads
+
+| Component | Path | Notes |
+|---|---|---|
+| Manifest | `.devin-plugin/plugin.json` | Takes precedence over `.claude-plugin/plugin.json` |
+| Skills (328) | `skills/<name>/SKILL.md` | Same format as Claude skills; Devin picks them by description |
+| Subagents (72) | `agents/<name>.md` | Available as `dcc:<name>` in local Devin (CLI and Desktop) |
+| Always-on rule | `AGENTS.md` | Short guide on when to use which skill or subagent |
+
+## Changes from ECC
+
+- Added `.devin-plugin/plugin.json` (plugin name `dcc`).
+- `agents/*.md`: removed Claude-specific `tools:` and `model:` frontmatter so Devin uses its own tools and default subagent model. Agent references `ecc:<agent>` became `dcc:<agent>`.
+- Root `AGENTS.md` replaced by a short always-on guide; the original ECC instructions are in `docs/ECC-AGENTS.md`.
+- `rules/` moved to `rule-packs/` so Devin does not load ECC's Claude-format rules as plugin rules. To use one, copy the files you want into your project's `.devin/rules/`.
+- Root `.mcp.json` (chrome-devtools) moved to `mcp-configs/ecc-default.mcp.json`, so no MCP server starts by default.
+- ECC hooks are not wired for Devin (they are Node scripts written for Claude Code).
+- Upstream CI workflows removed.
+
+Everything below this section is the original ECC README. Its install instructions target Claude Code and other harnesses, not Devin, and some paths (such as `rules/`) refer to the upstream layout.
+
+---
+
 <p align="center">
   <img src="assets/hero.png" alt="ECC - the agent harness operating system" width="100%" />
 </p>

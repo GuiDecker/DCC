@@ -50,13 +50,13 @@
 ## エージェントオーケストレーション
 
 ユーザーのプロンプトなしで積極的にエージェントを使用する：
-- 複雑な機能リクエスト → **ecc:planner**
-- コードの作成/変更直後 → **ecc:code-reviewer**
-- バグ修正または新機能 → **ecc:tdd-guide**
-- アーキテクチャの意思決定 → **ecc:architect**
-- セキュリティに関わるコード → **ecc:security-reviewer**
-- 自律ループ / ループ監視 → **ecc:loop-operator**
-- ハーネス設定の信頼性とコスト → **ecc:harness-optimizer**
+- 複雑な機能リクエスト → **dcc:planner**
+- コードの作成/変更直後 → **dcc:code-reviewer**
+- バグ修正または新機能 → **dcc:tdd-guide**
+- アーキテクチャの意思決定 → **dcc:architect**
+- セキュリティに関わるコード → **dcc:security-reviewer**
+- 自律ループ / ループ監視 → **dcc:loop-operator**
+- ハーネス設定の信頼性とコスト → **dcc:harness-optimizer**
 
 独立した操作には並列実行を使用する — 複数のエージェントを同時に起動する。
 

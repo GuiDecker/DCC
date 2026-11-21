@@ -1,0 +1,11 @@
+{
+  "name": "dcc",
+  "version": "1.0.0",
+  "description": "DCC: Devin adaptation of ECC (Everything Claude Code). 328 engineering skills, 72 subagents and multi-agent orchestration workflows (planning, TDD, code review, security, team orchestration).",
+  "author": { "name": "Guilherme Barreto Mendes" },
+  "homepage": "https://github.com/GuiDecker/DCC",
+  "repository": "https://github.com/GuiDecker/DCC",
+  "license": "MIT",
+  "keywords": ["skills", "agents", "multi-agent", "orchestration", "tdd", "code-review", "security", "ecc"],
+  "platforms": ["cloud", "local"]
+}

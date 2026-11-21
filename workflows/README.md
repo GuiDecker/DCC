@@ -11,9 +11,9 @@ A native port of **orch-pipeline Phase 5 (Review)**.
 The gated outer loop (Gate 1 after Plan, Gate 2 before Commit) **stays in the main conversation** — native workflows run autonomously in the background and cannot pause for interactive approval. This script owns only the segment *between* the gates:
 
 1. **Review** — one reviewer agent per dimension, in parallel:
-   - `ecc:code-reviewer` (correctness & quality) — always
+   - `dcc:code-reviewer` (correctness & quality) — always
    - the matching `ecc:<language>-reviewer` — when `args.language` maps to one
-   - `ecc:security-reviewer` — only when the orch-pipeline security trigger matches the diff/paths
+   - `dcc:security-reviewer` — only when the orch-pipeline security trigger matches the diff/paths
 2. **Dedup** — independent reviewers routinely flag the same line, so findings are merged across dimensions keyed on the normalized `evidence` snippet (titles and line numbers drift per reviewer; the offending code does not). Each surviving finding records which `dimensions` reported it and keeps the strictest severity.
 3. **Verify** — every *unique* `CRITICAL`/`HIGH` finding is handed to an independent adversarial verifier that defaults to *refuted* on uncertainty. `MEDIUM`/`LOW` pass through as advisory.
 
